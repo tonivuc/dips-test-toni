@@ -6,6 +6,9 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace android_cloud_test.Droid
 {
@@ -20,6 +23,9 @@ namespace android_cloud_test.Droid
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+
+            AppCenter.Start("4f1bd9e8-5b73-44d6-b2a9-7d3955eb3649",
+                   typeof(Analytics), typeof(Crashes));
         }
     }
 }
