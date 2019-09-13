@@ -5,7 +5,7 @@ using System.Text;
 
 namespace android_cloud_test.Logic
 {
-    class Names
+    public class Names
     {
         List<String> names;
 
@@ -21,6 +21,10 @@ namespace android_cloud_test.Logic
 
         public String AddName(String name)
         {
+            if (name == null)
+            {
+                throw new ArgumentNullException();
+            }
             names.Add(name);
             return names[names.Count - 1];
         }
