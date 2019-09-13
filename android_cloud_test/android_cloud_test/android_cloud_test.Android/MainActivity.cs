@@ -7,6 +7,10 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 using Xunit.Sdk;
 using Xunit.Runners.UI;
 using xUnitTestLibrary;
@@ -27,6 +31,11 @@ namespace android_cloud_test.Droid
 
             AddTestAssembly(typeof(LibraryTests).Assembly);
             // or in any assembly that you load (since JIT is available)
+
+            AppCenter.Start("android=4f1bd9e8-5b73-44d6-b2a9-7d3955eb3649;" +
+                  "uwp={Your UWP App secret here};" +
+                  "ios={Your iOS App secret here}",
+                  typeof(Analytics), typeof(Crashes));
 
 #if false
 			// you can use the default or set your own custom writer (e.g. save to web site and tweet it ;-)
