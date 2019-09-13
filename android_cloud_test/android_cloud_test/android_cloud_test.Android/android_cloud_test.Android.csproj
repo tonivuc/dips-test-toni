@@ -110,6 +110,10 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\xUnitTestLibrary\xUnitTestLibrary.csproj">
+      <Project>{77ddf0a9-3ad4-4779-a32b-22a0c103431c}</Project>
+      <Name>xUnitTestLibrary</Name>
+    </ProjectReference>
     <ProjectReference Include="..\android_cloud_test\android_cloud_test.csproj">
       <Project>{026E3371-4B38-4643-B77E-0130B2B815B8}</Project>
       <Name>android_cloud_test</Name>

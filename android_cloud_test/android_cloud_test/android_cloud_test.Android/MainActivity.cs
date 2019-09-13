@@ -9,6 +9,7 @@ using Android.OS;
 
 using Xunit.Sdk;
 using Xunit.Runners.UI;
+using xUnitTestLibrary;
 
 namespace android_cloud_test.Droid
 {
@@ -19,12 +20,12 @@ namespace android_cloud_test.Droid
         protected override void OnCreate(Bundle bundle)
         {
             // tests can be inside the main assembly
-            //AddTestAssembly(Assembly.GetExecutingAssembly());
+            AddTestAssembly(Assembly.GetExecutingAssembly());
 
             AddExecutionAssembly(typeof(ExtensibilityPointFactory).Assembly);
             // or in any reference assemblies			
 
-            //AddTestAssembly(typeof(NamesTest).Assembly);
+            AddTestAssembly(typeof(LibraryTests).Assembly);
             // or in any assembly that you load (since JIT is available)
 
 #if false
