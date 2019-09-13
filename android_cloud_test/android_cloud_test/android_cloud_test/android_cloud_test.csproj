@@ -12,6 +12,6 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.1.1" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.1.1" />
-    <PackageReference Include="Xamarin.Forms" Version="4.2.0.709249" />
+    <PackageReference Include="Xamarin.Forms" Version="4.2.0.778463" />
   </ItemGroup>
 </Project>
