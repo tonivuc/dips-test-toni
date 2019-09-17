@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="..\xUnitTestLibrary\Class1.cs" Link="Class1.cs" />
+    <Compile Include="..\xUnitTestLibrary\NamesTest.cs" Link="NamesTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
     <PackageReference Include="xunit" Version="2.4.1" />
     <PackageReference Include="xunit.runner.console" Version="2.4.1">
@@ -20,7 +25,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\xUnitTestLibrary\xUnitTestLibrary.csproj" />
+    <ProjectReference Include="..\android_cloud_test\android_cloud_test\android_cloud_test.csproj" />
   </ItemGroup>
 
 </Project>
